@@ -1,0 +1,19 @@
+---
+title: Riverpod Architecture from a Dataflow Perspective
+---
+
+Make sure to [read about Providers](./providers) first.
+
+While there are many ways to think about state management using Riverpod providers, thinking about it from a dataflow perspective helps some developers.
+
+## Why Dataflow?
+
+Why is looking at the flow of data helpful?
+
+- Riverpod allows you to specify all your state outside of the widget tree
+- Riverpod providers can be reactive and make it easy to track depedencies
+- The data in the UI is derived from
+  1. State coming from external apis
+  2. State from the UI itself
+
+## What about circular dependencies?
