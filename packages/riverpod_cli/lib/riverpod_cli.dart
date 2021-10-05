@@ -4,5 +4,6 @@ import 'src/migrate.dart';
 class RiverpodCommand extends CommandRunner<void> {
   RiverpodCommand() : super('riverpod', '') {
     addCommand(MigrateCommand());
+    addCommand(CreateCommand());
   }
 }
