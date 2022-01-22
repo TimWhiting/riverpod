@@ -1,24 +1,18 @@
 module.exports = {
   Sidebar: [
     "getting_started",
-    {
-      type: "category",
-      label: "Guides",
-      collapsed: false,
-      items: [
-        "cookbooks/testing",
-        //"cookbooks/refresh",
-      ],
-    },
+    
     {
       type: "category",
       label: "Concepts",
       items: [
         "concepts/providers",
         "concepts/reading",
+        "concepts/provider_lifecycles",
         "concepts/combining_providers",
         "concepts/provider_observer",
-        // "concepts/computed",
+        "concepts/why_immutability",
+        "concepts/scopes",
         {
           type: "category",
           label: "Modifiers",
@@ -31,6 +25,14 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Guides",
+      collapsed: false,
+      items: [
+        "cookbooks/testing",
+        //"cookbooks/refresh",
+      ],
+    }, 
+    { type: "category",
       label: "Migration",
       collapsed: false,
       items: ["migration/0.13.0_to_0.14.0", "migration/0.14.0_to_1.0.0"],
